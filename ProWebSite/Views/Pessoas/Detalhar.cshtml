@@ -1,0 +1,36 @@
+﻿@model ProWebSite.Models.Pessoa
+
+@{
+    ViewBag.Title = "Detalhar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Detalhes do produto</h4>
+            </div>
+            <div class="modal-body">
+                <hr />
+                <dl class="dl-horizontal">
+                    <dt>@Html.DisplayNameFor(model => model.Nome)</dt>
+                    <dd>@Html.DisplayFor(model => model.Nome)</dd>
+                    <dt>@Html.DisplayNameFor(model => model.Exames)</dt>
+                    <dd>@Html.DisplayFor(model => model.Exames)</dd>
+                    <dt>@Html.DisplayNameFor(model => model.Procedimentos)</dt>
+                    <dd>@Html.DisplayFor(model => model.Procedimentos)</dd>
+                    <dt>@Html.DisplayNameFor(model => model.Data)</dt>
+                    <dd>@Html.DisplayFor(model => model.Data)</dd>
+                    <dt>@Html.DisplayNameFor(model => model.Horas)</dt>
+                    <dd>@Html.TextBoxFor(model => model.Horas)</dd>
+                </dl>
+            </div>
+            
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+<p>
+<p>
+    @Html.ActionLink("Lista", "Index")
+</p>
