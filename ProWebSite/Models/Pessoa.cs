@@ -10,11 +10,25 @@ namespace ProWebSite.Models
     {
         [Key]
         public int PessoaId { get; set; }
+
         [Required(ErrorMessage = "O campo é obrigatório", AllowEmptyStrings = false)]
 
         public string Nome { get; set; }
         [Required(ErrorMessage = "O campo é obrigatório", AllowEmptyStrings = false)]
         public string Exames { get; set; }
+
+        [Required(ErrorMessage = "O campo é obrigatório", AllowEmptyStrings = false)]
+        public string Especialista { get; set; }
+
+
+        [Required(ErrorMessage = "O campo é obrigatório", AllowEmptyStrings = false)]
+        public string Medicamentos { get; set; }
+
+        [Required(ErrorMessage = "O campo é obrigatório", AllowEmptyStrings = false)]
+        public string Retorno { get; set; }
+
+        [Required(ErrorMessage = "O campo é obrigatório", AllowEmptyStrings = false)]
+        public string Laudos { get; set; }
 
         [Required(ErrorMessage = "O campo é obrigatório", AllowEmptyStrings = false)]
         public string Procedimentos { get; set; }

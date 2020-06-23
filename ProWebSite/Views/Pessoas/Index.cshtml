@@ -10,6 +10,16 @@
 <p>
     @Html.ActionLink("Nova Prontuario", "Novo", new { @class = "btn btn-info" })
 </p>
+
+<p>
+    @using (Html.BeginForm("Index","", FormMethod.Get))
+    {
+        @Html.TextBox("Pesquisa")
+        <input type="submit" value="Pesquisar" />
+
+    }
+</p>
+
 <table class="table">
     <tr>
         <th>
